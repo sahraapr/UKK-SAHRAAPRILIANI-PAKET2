@@ -66,15 +66,7 @@
                                     @enderror
                                 </div>
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="anonim" name="privasi" class="custom-control-input" value="anonim" {{ old('privasi') || session('privasi') == "anonim" ? "checked" : "" }}>
-                                        <label class="custom-control-label" for="anonim" data-toggle="tooltip" data-placement="top" title="Nama pelapor akan disamarkan.">Anonim</label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="rahasia" name="privasi" class="custom-control-input" value="rahasia" {{ old('privasi') || session('privasi') == "rahasia" ? "checked" : "" }}>
-                                        <label class="custom-control-label" for="rahasia" data-toggle="tooltip" data-placement="top" title="Laporan tidak akan terlihat di publik.">Rahasia</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Lapor!</button>
+                                    <button type="submit" class="btn btn-primary">Kirim</button>
                                 </div>
                             </form>
                         </div>
