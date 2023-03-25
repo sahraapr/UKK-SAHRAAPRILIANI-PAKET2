@@ -140,7 +140,7 @@ Route::prefix('_petugas')->group(function () {
         Route::get('alasan/getAlasan', [AlasanController::class, 'getAlasan'])->name('alasan.getAlasan');
         Route::post('alasan/store', [AlasanController::class, 'store'])->name('alasan.store');
         Route::get('alasan/edit/{id}', [AlasanController::class, 'edit'])->name('alasan.edit');
-        Route::put('alasan/update/{id}', [AlasanController::class, 'update'])->name('alasan.update');
+        Route::get('alasan/update/{id}', [AlasanController::class, 'update'])->name('alasan.update');
         Route::delete('alasan/delete/{id}', [AlasanController::class, 'destroy'])->name('alasan.delete');
     });
 });

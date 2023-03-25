@@ -24,7 +24,7 @@ class CreatePengaduanTable extends Migration
                 ->cascadeOnUpdate()
                 ->cascadeOnDelete();
             $table->string('foto');
-            $table->enum('privasi', ['anonim', 'rahasia', 'publik'])->default('publik');
+            $table->enum('privasi', ['rahasia', 'publik'])->default('publik');
             $table->enum('status', ['0', 'proses', 'selesai', 'ditolak'])->default(0);
             $table->text('alasan_ditolak')->nullable();
             $table->timestamps();

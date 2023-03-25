@@ -16,7 +16,7 @@
             <div class="col-12 col-md-8 p-0 mx-auto mb-5">
                 <div class="card">
                     <div class="card-header bg-primary">
-                        <p class="text-white font-weight-bold m-0" style="font-size:1.3rem;">FORM PENGADUAN</p>
+                        <p class="text-white font-weight-bold m-0" style="font-size:1.3rem;">FORM PENGADUAN MASYARAKAT CIBEUREUM</p>
                     </div>
                     <div class="card-body">
                         @if (session()->has('success'))    
@@ -70,6 +70,10 @@
                                 @enderror
                             </div>
                             <div class="d-flex align-items-center justify-content-end">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="rahasia" name="privasi" class="custom-control-input" value="rahasia" {{ old('privasi') || session('privasi') == "rahasia" ? "checked" : "" }}>
+                                    <label class="custom-control-label" for="rahasia" data-toggle="tooltip" data-placement="top" title="Laporan tidak akan terlihat di publik.">Rahasia</label>
+                                </div>
                                 <button type="submit" class="btn btn-primary">Kirim</button>
                             </div>
                         </form>

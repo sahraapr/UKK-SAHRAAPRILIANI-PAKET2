@@ -59,7 +59,7 @@ class BerandaController extends Controller
             'judul_laporan' => $request->judul_laporan,
             'isi_laporan' => $request->isi_laporan,
             'id_kategori' => $request->id_kategori,
-            'privasi' => $request->privasi ? $request->privasi : null
+            'privasi' => $request->privasi ? $request->privasi : 'privat'
         ]);
 
         return back()->with('error', 'Anda harus masuk terlebih dahulu!');

@@ -49,6 +49,9 @@
                                 @if($data->tanggapan)
                                     <p>{{ $data->tanggapan->tanggapan }}</p>
                                 @endif
+                                @if($data->alasan_ditolak)
+                                    <p>{{ $data->alasan_ditolak}}</p>
+                                 @endif
                             </div>
 
                         </div>

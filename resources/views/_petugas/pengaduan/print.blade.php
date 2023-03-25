@@ -32,10 +32,11 @@
                                         <div class="text-right">
                                             <p>{{ date('l, d F Y h:i', strtotime($data->tgl_pengaduan)) }}</p>
                                         </div>
+                                        <tr>
                                         <div class="row mb-2">
                                             <div class="col-3"><b>Nomor Pengaduan</b></div>
                                             <div class="col-9">#{{ $data->id_pengaduan }}</div>
-                                        </div>
+                                        </div></tr>
                                         <div class="row mb-2">
                                             <div class="col-3"><b>NIK</b></div>
                                             <div class="col-9">{{ $data->nik }}</div>

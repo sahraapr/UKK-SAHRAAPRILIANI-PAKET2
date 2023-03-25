@@ -6,7 +6,7 @@
             <h4>Edit Alasan</h4>
         </div>
         <div class="card-body">
-            <form action="{{ route('petugas.alasan.update', $data->id) }}" method="POST">
+            <form action="{{ route('_petugas.alasan.update', $data->id) }}" method="POST">
                 @csrf
                 @method('PUT')
 
