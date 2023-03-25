@@ -27,10 +27,10 @@
 			<div class="main-sidebar sidebar-style-2">
 				<aside id="sidebar-wrapper">
 					<div class="sidebar-brand">
-						<a href="index.html">Lapor!n</a>
+						<a href="index.html">PEMAS CIBEUREUM</a>
 					</div>
 					<div class="sidebar-brand sidebar-brand-sm">
-						<a href="index.html">LPR</a>
+						<a href="index.html">PMC</a>
 					</div>
 					@include('_petugas._partials.menu')
 				</aside>
